@@ -1,0 +1,2 @@
+const a = 'https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=073a3401d1f073571f149fde27f8bb3c&units=metric';
+const b = 'https://api.openweathermap.org/data/2.5/weather?q=Moscow&appid=073a3401d1f073571f149fde27f8bb3c&units=metric';

@@ -1,0 +1,7 @@
+{
+  "camelcase": true,
+  "quotmark": false,
+  "curly": true,
+  "maxparams": 4,
+  "esversion": 11
+}
