@@ -3,7 +3,7 @@ const start = function(){
   const searchBox = document.querySelector('.search input');
   const searchBtn = document.querySelector('.search button');
   const weatherIcon = document.querySelector('.weather-icon');
-
+  const weather = document.querySelector('.weather');
   const temp = document.querySelector('.temp');
   const city = document.querySelector('.city');
   const humidity = document.querySelector('.humidity');
@@ -50,11 +50,25 @@ const start = function(){
       default :
         weatherIcon.src = './assets/img/clouds.png';
     }
-    console.log(weatIco);
+    
   }
   searchBtn.addEventListener('click', ()=>{
     checkWeather(searchBox.value);
+
+    if (weather.style.display  ===  'block') {
+    weather.style.display = 'none';
+    weather.style.opacity = 0; 
+    // *  Скрываем блок и делаем его полностью прозрачным  * /
+  } else {
+    weather.style.display = 'block';
+    weather.style.opacity = 1; 
+    // *  Показываем блок и делаем его непрозрачным  * /
+  }
+    //weather.style.display  =  'block';
   });
+
+
+
   // searchBtn.addEventListener('click',  function(){searchBox.addEventListener('keyup',  function(){
   //     if  (searchBox.value  ===  ''){
   //       temp.innerHTML   =  ' ';
