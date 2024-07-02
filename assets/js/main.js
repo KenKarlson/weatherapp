@@ -52,34 +52,34 @@ const start = function(){
     }
     
   }
-  searchBtn.addEventListener('click', ()=>{
-    checkWeather(searchBox.value);
+  // searchBtn.addEventListener('click', ()=>{
+  //   checkWeather(searchBox.value);
 
-    if (weather.style.display  ===  'block') {
-    weather.style.display = 'none';
-    weather.style.opacity = 0; 
-    // *  Скрываем блок и делаем его полностью прозрачным  * /
-  } else {
-    weather.style.display = 'block';
-    weather.style.opacity = 1; 
-    // *  Показываем блок и делаем его непрозрачным  * /
-  }
-    //weather.style.display  =  'block';
-  });
-
-
-
-  // searchBtn.addEventListener('click',  function(){searchBox.addEventListener('keyup',  function(){
-  //     if  (searchBox.value  ===  ''){
-  //       temp.innerHTML   =  ' ';
-  //       city.innerHTML    =  ' ';
-  //       humidity.innerHTML=  ' ';
-  //       wind.innerHTML    =  ' ';
-  //     }else{
-  //       checkWeather(searchBox.value);
-  //     }
-  //   });
+  // //   if (weather.style.display  ===  'block') {
+  // //   weather.style.display = 'none';
+  // //   weather.style.opacity = 0; 
+  // //   // *  Скрываем блок и делаем его полностью прозрачным  * /
+  // // } else {
+  // //   weather.style.display = 'block';
+  // //   weather.style.opacity = 1; 
+  // //   // *  Показываем блок и делаем его непрозрачным  * /
+  // // }
+  //   //weather.style.display  =  'block';
   // });
+
+
+
+  searchBtn.addEventListener('click',  function(){searchBox.addEventListener('keyup',  function(){
+      if  (searchBox.value  ===  ''){
+        temp.innerHTML   =  ' ';
+        city.innerHTML    =  ' ';
+        humidity.innerHTML=  ' ';
+        wind.innerHTML    =  ' ';
+      }else{
+        checkWeather(searchBox.value);
+      }
+    });
+  });
 checkWeather('Moscow');
 };
 
