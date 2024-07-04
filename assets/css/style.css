@@ -5,8 +5,10 @@
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
   font-family: sans-serif;
+  background-image: url(../img/bg/bg_2.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 
 button {
@@ -20,22 +22,26 @@ button {
 }
 
 .container {
-  padding: 20px 10px;
+  padding: 20px;
   width: 450px;
-  height: 550px;
   margin: 0 auto;
-  margin-top: 100px;
-  background: linear-gradient(135deg, #24083b, #bc51d6);
-  border: none;
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 6px;
+  color: #fff;
 }
 
 .search-box {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .search-box input {
+  width: 270px;
   height: 50px;
   margin: 0;
   padding: 0 20px;
@@ -57,11 +63,69 @@ button {
   text-transform: capitalize;
 }
 .search-box button {
-  width: 40px;
+  padding: 0;
   background: transparent;
   border: none;
   outline: none;
   font-size: 28px;
   color: #fff;
-  padding: 0 40px 0 5px;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
+.weather-box {
+  text-align: center;
+}
+.weather img {
+  width: 60%;
+}
+.weather-details {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.weather-details img {
+  margin-right: 10px;
+  width: 64px;
+}
+.weather-details span {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 500;
+}
+.weather-details p {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.temp {
+  margin: 20px 0 0 0;
+  font-size: 64px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.description {
+  margin: 20px 0 0 0;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.humidity {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.wind {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }/*# sourceMappingURL=style.css.map */
